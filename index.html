@@ -16,8 +16,6 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="mobile-web-app-capable" content="yes">
@@ -792,8 +790,11 @@
                                     </div>
                                     <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 ">
                                         <div class="content_tabs">
-                                            <form name="f1" id="f1" action="https://script.google.com/macros/s/AKfycbxBMaFmhAadabawEJtN0xU0CEqsDl0IYvLgXojqZW350tMb5jfWI2I-u_ayt041K6xn/exec" method="post">
+                                            <form action="https://api.web3forms.com/submit" method="POST">
+                                                
+
                                                 <div class="row">
+                                                    <input type="hidden" name="access_key" value="5c70b3d8-bb7b-4eea-adf5-d00ddb3b6a03">
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                         <div class="x_slider_form_main_wrapper float_left"
                                                             data-animation="animated fadeIn">
@@ -804,7 +805,7 @@
 
                                                                 <div class="col-md-12">
                                                                     <div class="x_slider_select x_slider_select2">
-                                                                        <select id="ddlYear" name="ddlYear"
+                                                                        <select id="Year" name="Year"
                                                                             class="myselect">
                                                                             <option value="">Year</option>
                                                                             <option value="2019">2019</option>
@@ -880,7 +881,7 @@
                                                                 
                                                                 <div class="col-md-12">
                                                                     <div class="x_slider_select x_slider_select2">
-                                                                        <select id="ddlEngine" name="ddlEngine"
+                                                                        <select id="Engine" name="Engine"
                                                                             class="myselect">
                                                                             <option value="">Select Make/Model</option>
                                                                             <option value="AMC Ambassador"
@@ -5472,7 +5473,7 @@
                                                                         <div class="col-md-12">
                                                                             <div
                                                                                 class="x_slider_select x_slider_select2">
-                                                                                <select id="ddlPart" name="ddlPart"
+                                                                                <select id="Part" name="Part"
                                                                                     class="myselect">
                                                                                     <option value="0"> Choose Part
                                                                                     </option>
@@ -5501,9 +5502,9 @@
                                                                         <div class="col-md-12">
                                                                             <div
                                                                                 class="x_slider_select x_slider_select2 x_slider_form_input_wrapper">
-                                                                                <input id="txtName" name="txtName"
+                                                                                <input id="Name" name="Name"
                                                                                     type="text" placeholder="Full Name"
-                                                                                    required="">
+                                                                                   >
                                                                                 <span id="reqName"
                                                                                     style="color: Red; display: none;">Please
                                                                                     enter your name</span>
@@ -5512,30 +5513,30 @@
                                                                         <div class="col-md-12">
                                                                             <div
                                                                                 class="x_slider_select x_slider_select2 x_slider_form_input_wrapper">
-                                                                                <input id="txtMail" name="txtMail"
+                                                                                <input id="EMail" name="EMail"
                                                                                     type="email" placeholder="E-mail">
                                                                                 <span id="revMail"
                                                                                     style="color: Red; display: none;">Invalid
                                                                                     e-mail</span>
-                                                                                <span id="reqMail"
+                                                                               <!--  <span id="reqMail"
                                                                                     style="color: Red; display: none;">Please
-                                                                                    enter your e-mail</span>
+                                                                                    enter your e-mail</span> -->
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <div
                                                                                 class="x_slider_select x_slider_select2 x_slider_form_input_wrapper">
-                                                                                <input id="txtMobile" name="txtMobile"
+                                                                                <input id="Mobile" name="Mobile"
                                                                                     type="text" placeholder="Phone No.">
-                                                                                <span id="reqMobile"
+                                                                               <!--  <span id="reqMobile"
                                                                                     style="color: Red; display: none;">Please
-                                                                                    enter your phone no</span>
+                                                                                    enter your phone no</span> -->
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <div
                                                                                 class="x_slider_select x_slider_select2 x_slider_form_input_wrapper">
-                                                                                <input id="txtZip" name="txtZip"
+                                                                                <input id="ZipCode" name="ZipCode"
                                                                                     type="text" placeholder="Zip Code">
                                                                             </div>
                                                                         </div>
@@ -5560,7 +5561,10 @@
                                                                                             <button type="submit"
                                                                                                 id="submit"
                                                                                                 class="btn btn-success">Submit</button>
-                                                                                        </li>
+                                                                                                <button type="reset"
+                                                                                                value="Reset"
+                                                                                                class="btn btn-warning">Submit</button>
+                                                                                            </li>
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
