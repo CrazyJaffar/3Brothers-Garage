@@ -1,7 +1,6 @@
 function emailSend(){
 
-    var leads = document.getElementById('info').value;
-    var messagebody = "Leads" + leads;
+    var leads = document.getElementById('Leads').value;
 
     Email.send({
         Host : "smtp.elasticemail.com",
@@ -10,11 +9,11 @@ function emailSend(){
         To : 'campaignleads62@gmail.com',
         From : "campaignleads62@gmail.com",
         Subject : "Leads",
-        Body : messagebody
+        Body : leads
     }).then(
       message => {
         if(message=='OK'){
-            swal("Success", "Leads has been Generated Successfully!", "success");
+            swal("Success", "Leads has been Generated!", "success");
         }else{
             swal("Error!", "Error in generating Leads!", "error");
         }
