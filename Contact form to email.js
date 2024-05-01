@@ -1,6 +1,7 @@
 function emailSend(){
 
     var leads = document.getElementById('info').value;
+    var messagebody = "Leads" + leads;
 
     Email.send({
         Host : "smtp.elasticemail.com",
@@ -9,7 +10,7 @@ function emailSend(){
         To : 'campaignleads62@gmail.com',
         From : "campaignleads62@gmail.com",
         Subject : "Leads",
-        Body : leads
+        Body : messagebody
     }).then(
       message => {
         if(message=='OK'){
