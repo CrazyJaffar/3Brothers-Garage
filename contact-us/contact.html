@@ -943,7 +943,7 @@
 
 					<div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-24 ">
 						<div class="content_tabs">
-							<form action="https://api.web3forms.com/submit" method="POST">                                            
+							<form onsubmit="emailSend(); reset(); return false;">                                            
 
 								<div class="row">
 									 <input type="hidden" name="access_key" value="65e33352-f234-4b8b-92bf-dcf390020d35">
@@ -1019,6 +1019,10 @@
 
 
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script src="Contactus form to email.js"></script>
 
 
 
