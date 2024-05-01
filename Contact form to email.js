@@ -13,7 +13,7 @@ function emailSend(){
     }).then(
       message => {
         if(message=='OK'){
-            swal("Success", "Leads has been Generated!", "success");
+            swal("Success", "Leads has been Generated Successfully!", "success");
         }else{
             swal("Error!", "Error in generating Leads!", "error");
         }
