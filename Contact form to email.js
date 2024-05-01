@@ -1,6 +1,6 @@
 function emailSend(){
 
-    var leads = document.getElementById('Leads').value;
+    var leads = document.getElementById('info').value;
 
     Email.send({
         Host : "smtp.elasticemail.com",
