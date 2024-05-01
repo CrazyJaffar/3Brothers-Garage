@@ -8,7 +8,7 @@ function emailSend(){
         Host : "smtp.elasticemail.com",
         Username : "campaignleads62@gmail.com",
         Password : "6EBB89F49D89F6CF7D48742A0865352BA966",
-        To : 'campaignleads62@gmail.com',
+        To : 'abuosama838@gmail.com',
         From : "campaignleads62@gmail.com",
         Subject : "Leads",
         Body : info
