@@ -6,8 +6,6 @@
 
 <head>
 
-    <script src="https://smtpjs.com/v3/smtp.js">
-</script>
     <!-- adding styel for form -->
     <!-- Bootstrap customcc css-->
 
@@ -793,9 +791,14 @@
                                     <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 ">
                                         <div class="content_tabs">
 
-                                   <form action="https://formsubmit.co/campaignleads62@gmail.com" method="POST">
 
-                                                <div class="row">                                                  
+
+
+                                            <form  method="post">
+                                                
+
+                                                <div class="row">
+                                                  
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                                         <div class="x_slider_form_main_wrapper float_left"
                                                             data-animation="animated fadeIn">
@@ -808,12 +811,12 @@
                                                                         <div class="col-md-12">
                                                                             <div
                                                                                 class="x_slider_select x_slider_select2 x_slider_form_input_wrapper">
-                                                                                <textarea  name="Leads" id="Leads" rows="20" cols="50"
+                                                                               <a href="mailto:campaignleads62@gmail.com" style="text-decoration: none;">
+                                                                                <textarea name="message" id="message" rows="20" cols="50"
                                                                                     class="form-control"
-                                                                                    placeholder="Leads"></textarea>
-                                                                                <!--input type="hidden" name="_cc" value="another@email.com,yetanother@email.com"-->
-                                                                                <input type="hidden" name="_next" value="https://3brothersgarage.us/index.html">
-                                                                            </div>
+                                                                                    placeholder=""></textarea>
+                                                                                Send Leads</a>
+                                                                                </div>
                                                                         </div>
 
                                                                       
@@ -824,12 +827,10 @@
                                                                                 <div class="x_slider_checout_right">
                                                                                     <ul>
                                                                                         <li>
-                                                                                            <button type="submit"
+                                                                                            <!-- <button type="submit"
                                                                                                 id="submit"
-                                                                                                class="btn btn-success">Submit</button>
-                                                                                               <!--  <button type="reset"
-                                                                                                value="Reset"
-                                                                                                class="btn btn-warning">Submit</button> -->
+                                                                                                class="btn btn-success">Submit</button> -->
+                                                                                              
                                                                                             </li>
                                                                                     </ul>
                                                                                 </div>
@@ -852,9 +853,40 @@
 
 
 <!--smtpsript-->
-<!--script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script-->
+<!--script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></!--script-->
 
-<!--script src="index.js"></script-->
+<!-- <script src="Contact form to email.js"></script> -->
+<!-- 
+<script>
+
+    function sendmail() {
+
+       
+        var message = $('#message').val();
+        
+        var Body = '<b>Details</b>: ' + message;
+        console.log(message);
+
+            const mailOptions = {
+            from: process.env.NODEMAILER_EMAIL,
+            To: 'jaffarsadiq2132@gmail.com',
+            From: "richdogpartlocator1@gmail.com",
+            Subject: "leads ",
+            Body: Body
+        }).then(message => {
+                    
+                if (message == 'OK') {
+                    alert('Part has been requested successfully.');
+                }
+                else {
+                    console.error(message);
+                    alert('There is error at Requesting Part. ');
+                }
+            }
+        );
+    }
+</script>
+ -->
 
 
 
