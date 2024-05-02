@@ -1,4 +1,5 @@
 const leads = document.getElementById('Leads');
+const submit = document.getElementById('submit');
 
 const leads = document.getElementByClassName('form contact')[0];
 
