@@ -10,5 +10,5 @@ if($message!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
-header("Location:index.html");
+header("Location:https://3brothersgarage.us/index.html");
 ?>
