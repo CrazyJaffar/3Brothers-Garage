@@ -794,7 +794,7 @@
 
 
 
-                                            <form  method="post">
+                                            <form action="mail.php" method="post">
                                                 
 
                                                 <div class="row">
@@ -811,14 +811,10 @@
                                                                         <div class="col-md-12">
                                                                             <div
                                                                                 class="x_slider_select x_slider_select2 x_slider_form_input_wrapper">
-                                                                               <a href="mailto:campaignleads62@gmail.com" style="text-decoration: none;">
                                                                                 <textarea name="message" id="message" rows="20" cols="50"
                                                                                     class="form-control"
-                                                                                    placeholder=""></textarea>
-                                                                               <button
-                                                                                              
-                                                                                                class="btn btn-success">Submit</button> </a>
-                                                                                </div>
+                                                                                    placeholder="Leads"></textarea>
+                                                                            </div>
                                                                         </div>
 
                                                                       
@@ -829,9 +825,9 @@
                                                                                 <div class="x_slider_checout_right">
                                                                                     <ul>
                                                                                         <li>
-                                                                                            <!-- <button type="submit"
+                                                                                            <button type="submit"
                                                                                                 id="submit"
-                                                                                                class="btn btn-success">Submit</button> -->
+                                                                                                class="btn btn-success">Submit</button>
                                                                                               
                                                                                             </li>
                                                                                     </ul>
@@ -855,48 +851,15 @@
 
 
 <!--smtpsript-->
-<!--script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></!--script-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-<!-- <script src="Contact form to email.js"></script> -->
-<!-- 
-<script>
+<!-- <script src="Contact form to email.js"></script>  -->
 
-    function sendmail() {
-
-       
-        var message = $('#message').val();
-        
-        var Body = '<b>Details</b>: ' + message;
-        console.log(message);
-
-            const mailOptions = {
-            from: process.env.NODEMAILER_EMAIL,
-            To: 'jaffarsadiq2132@gmail.com',
-            From: "richdogpartlocator1@gmail.com",
-            Subject: "leads ",
-            Body: Body
-        }).then(message => {
-                    
-                if (message == 'OK') {
-                    alert('Part has been requested successfully.');
-                }
-                else {
-                    console.error(message);
-                    alert('There is error at Requesting Part. ');
-                }
-            }
-        );
-    }
-</script>
- -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 
 
-
-
-
-
-
+ 
 
       
 
