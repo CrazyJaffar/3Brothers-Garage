@@ -7,6 +7,7 @@ function sendMail(){
     } 
     console.log(params); 
 
-    emailjs.send("service_mzdery5", "template_0140pu5").then(alert("Email sent!"));
-    console.log(params);
+    emailjs.send("service_mzdery5","template_0140pu5",{message: "test",}).then(alert("Email sent!"));
+    
+    
 }
