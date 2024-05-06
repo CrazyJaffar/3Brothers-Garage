@@ -1,8 +1,8 @@
 function sendMail(){
-     let params ={
+     let parms ={
         message : document.getElementById("message").value,
       };
-    console.log(params); 
-    emailjs.send("service_mzdery5","template_0140pu5",params).then(alert("Email sent!")); 
+    console.log(parms); 
+    emailjs.send("service_mzdery5","template_0140pu5",parms).then(alert("Email sent!")); 
     
 }
